@@ -122,4 +122,4 @@ parser.add_argument('-col', '--col_num', type=int, required=True,
 args = parser.parse_args()
 
 tree = WtaTree(args.row_num, args.col_num)
-tree.generate_verilog()
+tree.generate_verilog(iteration=True)
